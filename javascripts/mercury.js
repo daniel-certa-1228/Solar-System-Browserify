@@ -1,7 +1,8 @@
 "use strict";
 
+var mercury = {};
 
-let mercuryCard = `
+mercury.mercuryCard = `
 				<article class="planet" id="mercury">
 					<header>
 						<h1>Mercury</h1>
@@ -15,19 +16,5 @@ let mercuryCard = `
 					<p>Visitors: Mariner 10 (1974), MESSENGER (2004)</p>
 				</article>`;
 
-function outputTo(domElement) {
-  $(domElement).append(mercuryCard);
-}
+module.exports = mercury;
 
-module.exports={outputTo};
-
-// let mercury = {
-// 	name: "Mercury",
-// 	discovered: "1400BC",
-// 	mass:"3.3011×1023 kg",
-// 	size: "7.48×107 km2",
-// 	distance_from_sun: "35.98 million miles",
-// 	atmosphere: "hydrogen, helium, and oxygen",
-// 	satellites: "none",
-// 	visitors: "Mariner 10 (1974), MESSENGER (2004)"
-// };
